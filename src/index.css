@@ -1,14 +1,125 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: Woodys;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("back-trees.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: url('Cursor-Arrow.png'), auto;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #101310d8;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+  color: green;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#users{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.header{
+  font-size:70pt;
+}
+
+.userImg{
+  width: 100%;
+  height:60%;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+
+div.polaroid {
+  width: 120pt;
+  height: 170pt;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-sizing: border-box;
+}
+
+div.name {
+  font-size: 10pt;
+  text-align: center;
+}
+
+.button{
+  color: #fff !important;
+text-transform: uppercase;
+background: rgb(8, 63, 8);
+padding: 5pt;
+border-radius: 50px;
+display: inline-block;
+border: none;
+margin-left:3pt;
+}
+
+.button:hover {
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(255, 255, 255, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(255, 255, 255, 0.57);
+  transition: all 0.4s ease 0s;
+  background-color: rgb(50, 155, 120);
+  }
+
+  input{
+    background: linear-gradient(21deg, #10abff, #1beabd);
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  select {
+    position: relative;
+    display: block;
+    max-width: 400px;
+    min-width: 180px;
+    margin: 0 auto;
+    border: 1px solid rgba(108, 200, 116, 0.74);
+    background-color: rgb(1, 62, 9);
+    z-index: 10;
+  }
